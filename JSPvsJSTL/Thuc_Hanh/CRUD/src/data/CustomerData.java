@@ -2,8 +2,9 @@ package data;
 
 import model.Customer;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.Collections;
+
+import java.util.*;
 
 public class CustomerData {
     private static final Map<Integer, Customer> ListCustomer = new HashMap<Integer, Customer>();
@@ -22,5 +23,32 @@ public class CustomerData {
         ListCustomer.put(cus4.getId(), cus4);
 
     }
-    // phương thức xử lí get thông tin chi tiêt của 1 customer theo id 
+
+    // phương thức xử lí get thông tin chi tiêt của 1 customer theo id
+    public static Customer getCustomer(int customerID) {
+        return ListCustomer.get(customerID);
+    }
+// phuong thuc them customer
+    public static void addCustomer(Customer customer) {
+        ListCustomer.put(customer.getId(), customer);
+    }
+
+    //viet phuong thuc update thong tin 1 customer
+    public static Customer updateCustomer(Customer customer) {
+        ListCustomer.put(customer.getId(), customer);
+        return customer;
+    }
+
+    // viet phuong thuc delete 1 customer theo id
+    public static void deleteCustomer(int customerID) {
+        ListCustomer.remove(customerID);
+    }
+
+    //viet phuong thuc lay danh sach tat ca cac custoemr
+    public static List<Customer> getAllCustomer(){
+        Collections<Customer> c = ListCustomer.values();
+        List<Customer> List = new ArrayList<Customer>();
+        List.addAll(c);
+        return List;
+    }
 }
