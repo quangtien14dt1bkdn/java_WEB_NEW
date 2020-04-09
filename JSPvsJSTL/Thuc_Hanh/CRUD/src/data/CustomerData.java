@@ -46,9 +46,7 @@ public class CustomerData {
 
     //viet phuong thuc lay danh sach tat ca cac custoemr
     public static List<Customer> getAllCustomer(){
-        Collections<Customer> c = ListCustomer.values();
-        List<Customer> List = new ArrayList<Customer>();
-        List.addAll(c);
-        return List;
+        return new ArrayList<>(ListCustomer.values());
     }
+
 }

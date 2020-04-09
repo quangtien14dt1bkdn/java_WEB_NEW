@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="CRUD:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="265d4f95-4d33-4c76-aa6e-d7e0f0f5a006" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/taglibs_standard_impl_1_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DemoServletJSP_CRUD/DemoServletJSP_CRUD.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DemoServletJSP_CRUD/src/controller/CustomerServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DemoServletJSP_CRUD/src/dao/CustomerDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DemoServletJSP_CRUD/src/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/CRUD_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/CRUD_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRUD.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CRUD.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/CustomerData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/CustomerData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/customer/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +35,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
   <component name="ProjectId" id="1a7F7BbXILxDpVF1sZryFNM52Ud" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -33,7 +54,15 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JSP" />
+    <property name="last_opened_file_path" value="D:/apache-tomcat-7.0.103/webapps/examples/WEB-INF/lib/taglibs-standard-spec-1.2.5.jar!/" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\REPO\JSPvsJSTL\Thuc_Hanh\CRUD\web\customer" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 7.0.103" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.103" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
@@ -115,7 +144,12 @@
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -132,18 +166,36 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586078555182</updated>
-      <workItem from="1586078560588" duration="10248000" />
+      <workItem from="1586078560588" duration="16173000" />
+      <workItem from="1586228892122" duration="689000" />
+      <workItem from="1586304702885" duration="3997000" />
     </task>
+    <task id="LOCAL-00001" summary="m">
+      <created>1586137376377</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586137376378</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="m" />
+    <option name="LAST_COMMIT_MESSAGE" value="m" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="274" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586108983625">
+    <state x="302" y="23" key="#Inspections" timestamp="1586313110697">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="274" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1586108983625" />
+    <state x="302" y="23" key="#Inspections/0.0.1366.728@0.0.1366.728" timestamp="1586313110697" />
+    <state x="274" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586313717170">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="274" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1586313717170" />
     <state x="864" y="79" key="#com.intellij.ide.util.MemberChooser" timestamp="1586086949237">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -152,9 +204,81 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="412" y="21" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1366.728@0.0.1366.728" timestamp="1586108982436" />
-    <state x="778" y="118" key="FileChooserDialogImpl" timestamp="1586108981403">
+    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1586137374089">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="778" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1586108981403" />
+    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586137374089" />
+    <state x="874" y="138" key="DetectedRootsChooserDialog" timestamp="1586313510400">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="874" y="138" key="DetectedRootsChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1586313510400" />
+    <state x="778" y="122" key="FileChooserDialogImpl" timestamp="1586313507649">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="778" y="122" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1586313507649" />
+    <state width="425" height="155" key="GridCell.Tab.0.bottom" timestamp="1586160004001">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="425" height="155" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586160004001" />
+    <state width="425" height="155" key="GridCell.Tab.0.center" timestamp="1586160004000">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="425" height="155" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586160004000" />
+    <state width="425" height="155" key="GridCell.Tab.0.left" timestamp="1586160004000">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="425" height="155" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586160004000" />
+    <state width="425" height="155" key="GridCell.Tab.0.right" timestamp="1586160004001">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="425" height="155" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586160004001" />
+    <state width="425" height="155" key="GridCell.Tab.1.bottom" timestamp="1586160004002">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="425" height="155" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586160004002" />
+    <state width="425" height="155" key="GridCell.Tab.1.center" timestamp="1586160004001">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="425" height="155" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586160004001" />
+    <state width="425" height="155" key="GridCell.Tab.1.left" timestamp="1586160004001">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="425" height="155" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586160004001" />
+    <state width="425" height="155" key="GridCell.Tab.1.right" timestamp="1586160004001">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="425" height="155" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586160004001" />
+    <state width="425" height="155" key="GridCell.Tab.2.bottom" timestamp="1586160004002">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="425" height="155" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586160004002" />
+    <state width="425" height="155" key="GridCell.Tab.2.center" timestamp="1586160004002">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="425" height="155" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1586160004002" />
+    <state width="425" height="155" key="GridCell.Tab.2.left" timestamp="1586160004002">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="425" height="155" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1586160004002" />
+    <state width="425" height="155" key="GridCell.Tab.2.right" timestamp="1586160004002">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="425" height="155" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1586160004002" />
+    <state x="175" y="0" key="SettingsEditor" timestamp="1586313552381">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="175" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586313552381" />
+    <state x="275" y="92" key="Vcs.Push.Dialog.v2" timestamp="1586137381699">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="92" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586137381699" />
+    <state x="360" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1586305063195">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="360" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586305063195" />
+    <state x="131" y="0" key="new project wizard" timestamp="1586313854889">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="131" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1586313854889" />
   </component>
 </project>
