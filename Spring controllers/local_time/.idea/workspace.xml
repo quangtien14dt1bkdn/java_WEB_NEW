@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8da0ea92-c4bb-414d-8137-6cd67871cc25" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/src/controllers/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/src/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/src/models/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/src/models/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/web/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/web/WEB-INF/views/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/web/WEB-INF/views/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/web/WEB-INF/views/user.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Tong_Quan_Mo_Hinh_MVC/Thuc_hanh/Spring/src/controllers/GreetingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Tong_Quan_Mo_Hinh_MVC/Thuc_hanh/Spring/web/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Tong_Quan_Mo_Hinh_MVC/Thuc_hanh/Spring/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Tong_Quan_Mo_Hinh_MVC/bai_tap/chuyen doi tien te/src/controllers/Converter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Tong_Quan_Mo_Hinh_MVC/bai_tap/chuyen doi tien te/web/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Tong_Quan_Mo_Hinh_MVC/bai_tap/chuyen doi tien te/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Tong_Quan_Mo_Hinh_MVC/bai_tap/chuyen doi tien te/web/WEB-INF/views/demo.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Tong_Quan_Mo_Hinh_MVC/bai_tap/thu vien/src/controllers/DictionaryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Tong_Quan_Mo_Hinh_MVC/bai_tap/thu vien/web/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Tong_Quan_Mo_Hinh_MVC/bai_tap/thu vien/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Tong_Quan_Mo_Hinh_MVC/bai_tap/thu vien/web/WEB-INF/views/demo.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Tong_Quan_Mo_Hinh_MVC/bai_tap/thu vien/web/WEB-INF/views/demo1.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\REPO\Spring controllers\local_time\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1aS3J2WF8O5211gJfLzcTSwDvpy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8da0ea92-c4bb-414d-8137-6cd67871cc25" name="Default Changelist" comment="" />
+      <created>1586715092308</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586715092308</updated>
+      <workItem from="1586715101660" duration="767000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="432" y="127" key="FileChooserDialogImpl" timestamp="1586715862361">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="432" y="127" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1586715862361" />
+    <state x="35" y="0" key="new project wizard" timestamp="1586715866636">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="35" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1586715866636" />
+  </component>
+</project>
