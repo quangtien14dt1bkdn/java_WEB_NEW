@@ -19,18 +19,19 @@ public class ProductController {
         model.addAttribute("listproduct",productService.findAll());
         return "index";
     }
+
     @GetMapping("/product/create")
     public String create(Model model){
         model.addAttribute("product",new Product());
         return "create";
     }
+
     @PostMapping("/product/save")
     public String save( Product product, RedirectAttributes redirect){
         product.setId((int)(Math.random()*1000));
         productService.save(product);
         redirect.addFlashAttribute("success","add product successly!!!");
         return "redirect:/";
-
     }
     @GetMapping("/product/{id}/edit")
     public String edit(@PathVariable int id,Model model){

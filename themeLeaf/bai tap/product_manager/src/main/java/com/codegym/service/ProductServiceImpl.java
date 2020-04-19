@@ -16,7 +16,6 @@ public class ProductServiceImpl implements ProductService {
         listProduct.put(2,new Product(2,"Sam Sung A71",15000000, "/imageWeb/img/samsunga71.jpg","Korea"));
         listProduct.put(3,new Product(3,"Oppo A91",8000000, "/imageWeb/img/oppoa91.jpg","Taiwan"));
         listProduct.put(4,new Product(4,"Xiaomi 10",9000000, "/imageWeb/img/xiaomi10.jpg","China"));
-
     }
 
 
