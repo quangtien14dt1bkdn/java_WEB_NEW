@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Degree</title>
+</head>
+<body>
+
+<div class="column middle">
+    <a href="/menu" style="color: black">Back to Menu</a>
+    <a href="/degrees" style="color: black">List Degree</a>
+    <h1>Create Degree </h1>
+
+    <form th:action="@{createDegree}" method="post" th:object="${degree}">
+        <!--    <input type="hidden" th:field="*{id}">-->
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" th:field="*{name}"></td>
+            </tr>
+
+            <tr>
+                <td><input type="submit" value="Create Degree"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+</body>
+</html>

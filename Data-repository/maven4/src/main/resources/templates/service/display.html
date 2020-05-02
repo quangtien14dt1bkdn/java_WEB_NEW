@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <style th:replace="home::style"></style>
+</head>
+<body>
+<script>
+    const deleteTableRow=row=>{
+        if(confirm('Are you sure')){
+            const index=row.parentNode.parentNode.rowIndex;
+            document.getElementById("row-need-delete").deleteRow(index);
+        }
+    }
+</script>
+<script>
+    $(document).ready(function(){
+        $('.toast').toast('show');
+    });
+</script>
+<div class="header" th:replace="home::header">
+</div>
+<div class="left-sidenav" th:replace="home::left-sidenav"></div>
+<div class="right-sidenav">
+    <!--    TODO change id-->
+    <a href="/service/new" id="item1">New service</a>
+    <a href="/customer" id="item2">Customer</a>
+    <a href="/contract/new" id="item3">New contract</a>
+    <a href="/use-service" id="item4">Using service register</a>
+    <a href="/contract-detail/new" id="item5">New detailed contract</a>
+<!--    <a href="/customer" id="item6">Customer</a>-->
+</div>
+<div class="main">
+    <div class="toast" data-autohide="false" th:if="${status}">
+        <div class="toast-header">
+            <strong class="mr-auto text-primary">Message</strong>
+            <small class="text-muted">1 second ago</small>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+        </div>
+        <div class="toast-body" th:text="${status}">
+        </div>
+    </div>
+    <table class="customer-table" id="row-need-delete">
+        <tr>
+            <th>Area</th>
+            <th>Floor amount</th>
+            <th>Free accompany service</th>
+            <th>Maximum people</th>
+            <th>Other convenience description</th>
+            <th>Rent fee</th>
+            <th>Room standard</th>
+            <th>Status</th>
+            <th>Rent type</th>
+            <th>Service type</th>
+            <th>Edit</th>
+            <th>Delete</th>
+            <th>Favorite</th>
+        </tr>
+        <tr th:each="service:${services}">
+            <td th:text="${service.getArea()}"></td>
+            <td th:text="${service.getFloorAmount()}"></td>
+            <td th:text="${service.getFreeAccompanyService()}"></td>
+            <td th:text="${service.getMaximumPeople()}"></td>
+            <td th:text="${service.getOtherConvenienceDescription()}"></td>
+            <td th:text="${service.getRentFee()}"></td>
+            <td th:text="${service.getRoomStandard()}"></td>
+            <td th:text="${service.getStatus()}"></td>
+            <td th:text="${service.getRentType().getName()}"></td>
+            <td th:text="${service.getServiceType().getName()}"></td>
+            <td><a th:href="@{/service/edit/{id}(id=${service.getId()})}">Edit</a> </td>
+            <td >
+                <form th:action="@{/delete-service/{id}(id=${service.getId()})}">
+                    <input type="submit" value="Delete" style="border-radius: 3px;background-color: #eb4d0f;
+                border: #dddddd;color: #dddddd;height: 30px" />
+                </form>
+            </td>
+            <td><a th:href="@{/like-service/{id}(id=${service.getId()})}">Add</a> </td>
+        </tr>
+    </table>
+    <div class="paging" >
+        <a th:href="@{'/service'(page=${services.number -1})}" th:if="${services.hasPrevious()}">Previous</a>
+        <span th:text="${services.number +1}"></span>
+        /<span th:text="${services.totalPages}"></span>
+        <a th:href="@{'/service'(page=${services.number +1})}" th:if="${services.hasNext()}">Next</a>
+    </div>
+    <div class="search" >
+        <form th:action="@{/service-search}" style="position: absolute;right: 192px;margin-top: -16px;">
+            <input type="text" placeholder="Enter service status" name="serviceStatus"/>
+            <input type="submit" value="Search"/>
+        </form>
+    </div>
+</div>
+</body>
+</html>

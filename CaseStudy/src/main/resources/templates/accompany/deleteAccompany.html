@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head >
+    <meta charset="UTF-8">
+    <title>Delete Accompany</title>
+</head>
+<body>
+
+<div>
+    <a href="/menu" style="color: black">Back to Menu</a>
+    <a href="/accompanys" style="color: black">List Accompany</a>
+    <h1>Delete Accompany</h1>
+    <h2>Are you sure?</h2>
+
+    <form th:action="@{/deleteAccompany}" th:object="${accompany}" method="post">
+        <input th:type="hidden" name="id" th:field="*{id}">
+        <table>
+            <tr>
+                <td>Id:</td>
+                <td th:text="*{id}"></td>
+            </tr>
+            <tr>
+                <td>Name:</td>
+                <td th:text="*{name}"></td>
+            </tr>
+            <tr>
+                <td>Price:</td>
+                <td th:text="*{cost}"></td>
+            </tr>
+            <tr>
+                <td>Currency:</td>
+                <td th:text="*{numbers_of_service}"></td>
+            </tr>
+            <tr>
+                <td>Status:</td>
+                <td th:text="*{status}"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Delete Accompany"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout :: head">
+    <meta charset="UTF-8">
+    <title>Edit Position </title>
+</head >
+
+<body >
+
+<div >
+
+    <a href="/menu" style="color: black">Back to Menu</a>
+    <a href="/positions" style="color: black">List Position</a>
+    <h1>Edit Position</h1>
+
+    <form th:action="@{/editPosition}" th:object="${position}" method="post">
+        <input th:type="hidden" name="id" th:field="*{id}">
+        <!--    <input th:type="hidden" name="id" th:field="*{image_id}">-->
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" th:field="*{name}"></td>
+            </tr>
+
+            <tr>
+                <td><input type="submit" value="Edit Position"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+
+
+</body>
+</html>

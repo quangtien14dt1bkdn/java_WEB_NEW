@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head >
+    <meta charset="UTF-8">
+    <title>Delete Degree</title>
+</head>
+<body>
+
+
+
+<div class="column middle">
+    <a href="/menu" style="color: black">Back to Menu</a>
+    <a href="/degrees" style="color: black">List Degree</a>
+    <h1>Delete Degree</h1>
+    <h2>Are you sure?</h2>
+
+    <form th:action="@{/deleteDegree}" th:object="${degree}" method="post">
+        <input th:type="hidden" name="id" th:field="*{id}">
+        <table>
+            <input th:type="hidden" name="id" th:field="*{id}">
+            <tr>
+                <td>Id:</td>
+                <td th:text="*{id}"></td>
+            </tr>
+            <tr>
+                <td>Name:</td>
+                <td th:text="*{name}"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Delete Degree"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+
+</body>
+</html>

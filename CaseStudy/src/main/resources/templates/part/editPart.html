@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout :: head">
+    <meta charset="UTF-8">
+    <title>Edit Part </title>
+</head >
+
+<body >
+
+<div>
+
+    <a href="/menu" style="color: black">Back to Menu</a>
+    <a href="/parts" style="color: black">List Part</a>
+    <h1>Edit Part</h1>
+
+
+    <form th:action="@{/editPart}" th:object="${part}" method="post">
+        <input th:type="hidden" name="id" th:field="*{id}">
+        <!--    <input th:type="hidden" name="id" th:field="*{image_id}">-->
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" th:field="*{name}"></td>
+            </tr>
+
+            <tr>
+                <td><input type="submit" value="Edit Part"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <style th:replace="home::style"></style>
+</head>
+<body>
+<script>
+    const deleteTableRow=row=>{
+        if(confirm('Are you sure')){
+            const index=row.parentNode.parentNode.rowIndex;
+            document.getElementById("row-need-delete").deleteRow(index);
+        }
+    }
+</script>
+<script>
+    $(document).ready(function(){
+        $('.toast').toast('show');
+    });
+</script>
+<div class="header" th:replace="home::header">
+</div>
+<div class="left-sidenav" th:replace="home::left-sidenav"></div>
+<div class="right-sidenav">
+<!--    TODO change id-->
+    <a href="/customer/new" id="item1">New customer</a>
+    <a href="/service" id="item2">Service</a>
+    <a href="/contract/new" id="item3">New contract</a>
+    <a href="/use-service" id="item4">Using service register</a>
+    <a href="/contract-detail/new" id="item5">New detailed contract</a>
+    <a href="/customer-using-service" id="item6">Find customer using service</a>
+</div>
+<div class="main">
+    <div class="toast" data-autohide="false" th:if="${status}">
+        <div class="toast-header">
+            <strong class="mr-auto text-primary">Message</strong>
+            <small class="text-muted">1 second ago</small>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+        </div>
+        <div class="toast-body" th:text="${status}">
+        </div>
+    </div>
+    <table class="customer-table" id="row-need-delete">
+        <tr>
+            <th>Id</th>
+            <th>Full name</th>
+            <th>Birth</th>
+            <th>Gender</th>
+            <th>Email</th>
+            <th>Phone number</th>
+            <th>Address</th>
+            <th>CMND</th>
+            <th>Customer Type</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        <tr th:each="customer:${customers}">
+            <td th:text="${customer.getId()}"></td>
+            <td th:text="${customer.getFullName()}"></td>
+            <td th:text="${customer.getBirth()}" ></td>
+            <td th:text="${customer.getGender()}"></td>
+            <td th:text="${customer.getEmail()}"></td>
+            <td th:text="${customer.getPhoneNumber()}"></td>
+            <td th:text="${customer.getAddress()}"></td>
+            <td th:text="${customer.getIdNumber()}"></td>
+            <td th:text="${customer.getCustomerType().getName()}"></td>
+            <td><a th:href="@{/customer/edit/{id}(id=${customer.getId()})}">Edit</a></td>
+            <td >
+                <form th:action="@{/delete-customer/{id}(id=${customer.getId()})}">
+                    <input type="submit" value="Delete" style="border-radius: 3px;background-color: #eb4d0f;
+                border: #dddddd;color: #dddddd;height: 30px" />
+                </form>
+            </td>
+        </tr>
+    </table>
+    <div class="paging" >
+        <a th:href="@{'/customer'(page=${customers.number -1})}" th:if="${customers.hasPrevious()}" >Previous</a>
+        <span th:text="${customers.number +1}"></span>
+        /<span th:text="${customers.totalPages}"></span>
+        <a th:href="@{'/customer'(page=${customers.number +1})}" th:if="${customers.hasNext()}">Next</a>
+
+    </div>
+    <div class="search" >
+        <form th:action="@{/customer-search}" style="position: absolute;right: 192px;margin-top: -16px;">
+            <input type="text" placeholder="Enter customer name" name="customerName"/>
+            <input type="submit" value="Search"/>
+        </form>
+    </div>
+</div>
+</body>
+</html>
